@@ -44,7 +44,17 @@ help	------->      Displays the list of available commands.
 
 
 
-<img width="1920" height="1080" alt="Screenshot_2026-07-17_10_17_03" src="https://github.com/user-attachments/assets/96871654-0e97-4103-be64-79942bee35e1" />
+## ✨ Latest Upgrades: Human-in-the-Loop (HITL) Architecture
+
+To address real-world Security Operations Center (SOC) challenges such as false positives (e.g., accidentally blocking Google or GitHub due to high HTTPS encryption entropy) and alert fatigue, DeepSight has been upgraded with a **Human-in-the-Loop** decision model:
+
+*   **Auto-Investigation Engine:** Suspicious IPs are no longer just flagged. The engine automatically fetches Geolocation, ISP, and Reverse DNS (Hostname) data in the background to provide immediate context to the security analyst.
+*   **Pending Threat Queue:** Instead of blindly blocking traffic, alerts are placed in a pending queue. The system presents the gathered intelligence and waits for an admin's final decision.
+*   **ID-Based Target Resolution:** Streamlined the CLI workflow for faster response times. Analysts can now quarantine or whitelist threats using auto-generated alert IDs (e.g., typing `block 1` instead of `block 150.171.110.98`).
+*   **Smart Whitelisting:** Quickly bypass trusted IP addresses (`ignore <id>`) to refine the engine's accuracy and prevent future interruptions to essential services.
+
+
+<img width="1920" height="1080" alt="Screenshot_2026-07-17_10_35_53" src="https://github.com/user-attachments/assets/28e93b25-acd7-49c6-955b-3a1c119c7b0d" />
 
 
 
