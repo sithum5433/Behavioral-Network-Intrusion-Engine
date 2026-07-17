@@ -41,3 +41,10 @@ sudo python3 deepsight.py
 
 help	------->      Displays the list of available commands.
 
+
+
+
+<img width="1920" height="1080" alt="Screenshot_2026-07-17_10_17_03" src="https://github.com/user-attachments/assets/96871654-0e97-4103-be64-79942bee35e1" />
+
+
+
